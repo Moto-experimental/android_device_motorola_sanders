@@ -30,7 +30,8 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_DTBTOOL_ARGS := --force-v3
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-TARGET_KERNEL_CONFIG := sanders_defconfig
+TARGET_KERNEL_CONFIG += vendor/moto/sanders.config
+TARGET_KERNEL_RECOVERY_CONFIG += vendor/moto/sanders.config
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
